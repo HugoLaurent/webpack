@@ -14,13 +14,15 @@ const config: Configuration = {
     module: {
         rules: [
             {
-                test: /\.{ts|jsx}x?$/i,
+                test: /\.(ts|js)x?$/i,
                 exclude: /node_modules/,
                 use: {
                     loader: 'babel-loader',
                     options: {
-                        presets: ['babel@/preset.env','@babel/preset-typescript', '@babel/preset-react'],
+                        presets: ['@babel/preset-env','@babel/preset-typescript', '@babel/preset-react'],
+
                     },
+                    
                 },
             }           
         ],
@@ -30,7 +32,7 @@ const config: Configuration = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './src/index.html',
+            template: 'index.html',
         }),
         new HotModuleReplacementPlugin(),
     ],
