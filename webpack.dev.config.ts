@@ -10,7 +10,7 @@ const config: Configuration = {
     output: {
         publicPath: '/',
     },
-    entry: './src/index.ts',
+    entry: './src/index.tsx',
     module: {
         rules: [
             {

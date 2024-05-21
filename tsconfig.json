@@ -14,7 +14,8 @@
         "jsx": "react",
     },
     "include": [
-        "src"
+        "src", 
+        "webpack.dev.config.ts"    
     ],
     "exclude": [
         "node_modules", 
