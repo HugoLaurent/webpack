@@ -34,6 +34,13 @@ const config: Configuration = {
         }),
         new HotModuleReplacementPlugin(),
     ],
+    devtool: 'inline-source-map',
+    devServer: {
+        static: path.join(__dirname, 'dist'),
+        open: true,
+        hot: true,
+        port: 4000,
+    },
 };
 
 export default config;
